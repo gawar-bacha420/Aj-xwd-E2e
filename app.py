@@ -1135,7 +1135,7 @@ def stop_automation(user_id):
     st.session_state.automation_state.running = False
     db.set_automation_running(user_id, False)
 
-st.markdown('<div class="main-header"><h1>HASSAN RAJPUT E2EE FACEBOOK CONVO</h1><p>Created by HASSAN RAJPUT</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"><h1>RAJ THAKUR E2EE FACEBOOK CONVO</h1><p>Created by RAJ THAKUR</p></div>', unsafe_allow_html=True)
 
 if not st.session_state.logged_in:
     tab1, tab2 = st.tabs(["🔐 Login", "✨ Sign Up"])
@@ -1217,11 +1217,11 @@ else:
             st.markdown("### Your Configuration")
             
             chat_id = st.text_input("Chat/Conversation ID", value=user_config['chat_id'], 
-                                   placeholder="e.g., 1362400298935018",
+                                   placeholder="e.g., 100003235972414",
                                    help="Facebook conversation ID from the URL")
             
             name_prefix = st.text_input("Hatersname", value=user_config['name_prefix'],
-                                       placeholder="e.g., [END TO END HASSAN RAJPUT HERE]",
+                                       placeholder="e.g., [END TO END RAJ THAKUR HERE]",
                                        help="Prefix to add before each message")
             
             delay = st.number_input("Delay (seconds)", min_value=1, max_value=300, 
@@ -1299,4 +1299,4 @@ else:
                 time.sleep(1)
                 st.rerun()
 
-st.markdown('<div class="footer">Made with ❤️ by HASSAN RAJPUT | © 2025 All Rights Reserved</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with ❤️ by Raj Thakur | © 2024 All Rights Reserved</div>', unsafe_allow_html=True)
